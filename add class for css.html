@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    .blue{
+        background-color:red;
+    }
+</style>
+    <script>
+        $(function () {
+            $('button').click(function () {
+                /*$('p').addClass('blue');
+                $('p').removeClass('blue');*/
+                $('p').toggleClass('blue');
+            });
+           
+        });
+    </script>
+</head>
+<body>
+    <button>click me</button>
+    <br />
+    <br />
+    <p>this is blue class paragraph</p>
+</body>
+</html>
