@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('button').click(function () {
+            $('div style').width();
+            $('div style').innerWidth();
+            $('div style').height();
+            $('div style').innerHeight();
+        });
+    });
+</script>
+</head>
+<body>
+    <div style="height:200px;width:50%;border:1px solid black">
+        <button style="margin-left:200px;margin-top:150px;height:20px;width:100px;border:3px solid red">
+            click me
+        </button>
+    </div>
+</body>
+</html>
