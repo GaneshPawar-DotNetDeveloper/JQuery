@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script>
+     $(function () {
+         $('button').click(function () {
+            // document.getElementsByClassName('blue').style.dispaly = 'none';  // this not work
+             // because blue class vale bahut sare element ho sakate he.
+             var element = document.getElementsByClassName('blue');
+             for (var i = 0; i < element.length; i++) {
+                 element[i].style.display = 'none';
+             }
+         });
+     });
+ </script>
+</head>
+<body>
+    <button>
+        click me
+    </button>
+    <br />
+    <br />
+    <div style="background-color:red;height:100px;width:100px ; position:absolute"class="blue">
+        div content
+    </div>
+
+</body>
+</html>
