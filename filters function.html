@@ -1,0 +1,134 @@
+﻿<!--<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+    $(function () {
+        $('button').click(function () {
+            var names = ['suraj','ganesh','raj','uday','padam'];
+            var lis = '';
+            //   for (var name of names) {
+            for (var i = 0; i < names.length;i++) {
+                lis += `<li>${names[i]}<li>`
+            }
+            $('#names').html(lis);
+            $('input').keyup(function () {
+                var input = $(this).val;
+                for (var name of names) {
+                    var index = name.indexOf(input);
+                    var lis = '';
+                    if (index > -1) {
+                        lis += `<li>${names[i]}<li>`
+
+                    }
+                    $('#names').html(lis);
+
+
+                }
+            });
+        });
+    });
+</script>
+</head>
+<body>
+    name: <input type="text"id="input" />
+    <br />
+    <ul id="names"></ul>
+    <button id="btn">click me</button>
+
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Filterable Table</h2>
+    <p>Type something in the input field to search the table for first names, last names or emails:</p>
+    <input id="myInput" type="text" placeholder="Search..">
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <tr>
+                <td>suraj</td>
+                <td>anna</td>
+                <td>s@p.com</td>
+            </tr>
+            <tr>
+                <td>ganesh</td>
+                <td>dada</td>
+                <td>d@d.com</td>
+            </tr>
+            <tr>
+                <td>pruthvi</td>
+                <td>baba</td>
+                <td>b@b.com</td>
+            </tr>
+            <tr>
+                <td>padmraj</td>
+                <td>patil</td>
+                <td>p@p.com</td>
+            </tr> <tr>
+                <td>udayraj</td>
+                <td>patil</td>
+                <td>v@p.com</td>
+            </tr> <tr>
+                <td>padmraj</td>
+                <td>patil</td>
+                <td>p@p.com</td>
+            </tr> <tr>
+                <td>padmraj</td>
+                <td>patil</td>
+                <td>p@p.com</td>
+            </tr> <tr>
+                <td>padmraj</td>
+                <td>patil</td>
+                <td>p@p.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+
+</body>
+</html>
