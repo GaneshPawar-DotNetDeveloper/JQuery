@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('button').click(function () {
+
+                // this is get css property
+           /*var v1=     $('p').css('background-color');
+                document.write(v1); */
+
+
+                // this is set css property:
+               /* var v2 = $('p').css('background-color', 'green');
+                var v3 = $('p').css('color', 'pink'); */
+
+                $('p').css({
+                    'background-color': 'red',
+                    'color': 'yellow',
+                    'text-align':'center'
+                });
+
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <button>click me</button>
+    <br />
+    <br />
+   <!-- <p style="background-color:yellow">this is blue class paragraph</p>-->
+    <p>this is blue class paragraph</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('button').click(function () {
+
+
+            var v1 = $('input[type="text"]').val(); // value
+            console.log('text value ' + v1);
+
+            var v2 = $('p').text();  // innerText
+            console.log('paragraph text ' + v2);
+
+            var v3 = $('div').html(); // innerHtml
+            console.log('paragraph text ' + v3);
+        });
+    });
+</script>
+</head>
+<body>
+
+    
+    <input type="text" />
+    <br />
+    <br />
+    <p>this is paragraph content</p>
+    <br />
+    <br />
+    <div>
+        <span>this is span content</span>
+        <a href="http://www.google.com">google.com</a>
+    </div>
+    <br />
+    <br />
+   
+    <button>click me</button>
+</body>
+</html>
