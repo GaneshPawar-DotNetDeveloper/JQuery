@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        /*$(function () {
+            $('button').click(function () {
+              
+                $('p').not('.blue').css('background-color', 'yellow');
+            });
+        });
+*/
+     /*   jQuery(function () {
+            jQuery('button').click(function () {
+              
+                jQuery('p').css('background-color', 'yellow');
+            });
+        });*/
+
+
+       var ganesh = $.noConflict();
+
+        ganesh(function () {
+            ganesh('button').click(function () {
+              
+                ganesh('p').not('.blue').css('background-color', 'yellow');
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <button>
+        click me
+    </button>
+    <p>this is first paragraph</p>
+    <p >this is second paragraph</p>
+    <p>this is third paragraph</p>
+    <p >this is fourth paragraph</p>
+    <p>this is last paragraph</p>
+</body>
+</html>
