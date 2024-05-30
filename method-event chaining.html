@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(function () {
+       /* $('button').click(function () {
+            $('div').css('background-color', 'red');
+            $('button').css('background-color', 'red');
+            $('div').animate({ left: '+=200px' });
+        });*/
+        // this is reapeated writtern event so for aviod it we use
+        // event/method chaining:
+        $('button').click(function () {
+            $('div').css('background-color', 'green')
+                .animate({ left: '+=200px' });
+
+        });
+    });
+
+   // this example ::  $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+</script>
+</head>
+<body>
+    <button>click me</button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div style="background-color:red;height:100px;width:100px ; position:absolute ">
+        div content
+    </div>
+</body>
+</html>
