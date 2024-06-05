@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $('button').click(function () {
+
+
+                $('input[type="text"]').val('ganesh'); // value
+
+
+                $('p').text('this is paragraph content');  // innerText
+
+
+                $('div').html('<span>this is span content</span><a href="http://www.google.com">google.com</a>'); // innerHtml
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" />
+
+    <br />
+    <br />
+
+    <p></p>
+
+    <br />
+    <br />
+
+    <div> </div>
+
+    <br />
+    <br />
+    <button>click me</button>
+</body>
+</html >
